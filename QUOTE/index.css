@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    left: 0;
+    top: 0;
+}
+.container .header h2{
+  font-size: 40px;
+}
+.main-container{
+    width: 80%;
+}
+.header h2{
+    padding: 30px;
+}
+.container{
+    width: 40%;
+    height: 90vh;
+    margin-top: 3%;
+    /* text-alig%n: center; */
+    border-bottom-left-radius: 8%;
+    border-top-left-radius: 8%;
+
+    background-color: #D1C9BE;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.main-content{
+    margin-top: 20%;
+    font-size: 2rem;
+    height: 100%;
+}
+
+.allbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 12%;
+}
+.btn1,.btn2,.btn3{
+    width: 30%;
+}
+.btn1 button,.btn2 button,.btn3 button{
+    width: 100%;
+    height: 40px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    
+    background-color:#e0cccc;
+    cursor: pointer;
+}
+.btn1 button:hover , .btn2 button:hover , .btn3 button:hover{
+    background-color: #D1C9BE;
+}
+
+.btn{
+    margin-top: 20%;
+}
+.btn button{
+    font-size: 1.5rem;
+    height: 50px;
+    width: 40%;
+    border-radius: 5px;
+    
+    background-color:#e0cccc;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: #D1C9BE;
+}
+
+@media  (min-width:965px) and (max-width:1127px)
+{
+    .container{
+        height: 100%;
+    }
+    .allbtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 12%;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn1,.btn2,.btn3{
+        margin-top: 4%;
+    }
+
+}
+@media (min-width:300px) and (max-width:965px) {
+    
+    .container{
+        height: 100%;
+    }
+    .allbtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 12%;
+        justify-content: center;
+        align-items: center;
+    }
+   .container{
+    width: 90%;
+   }
+    .btn1,.btn2,.btn3{
+        margin-top: 4%;
+        width: 100%;
+    }
+}
